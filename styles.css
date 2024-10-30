@@ -19,22 +19,22 @@
   
   h1 {
     color: #d90429; /* Sangria Red */
-    font-size: 3rem; /* Increase font size */
+    font-size: 3rem;
   }
   
   p {
-    font-size: 2rem; /* Larger font size for paragraphs */
+    font-size: 2rem;
   }
   
   button {
     background-color: #d90429; /* Sangria Red */
     color: white;
     border: none;
-    padding: 20px 40px; /* Larger padding */
-    font-size: 1.5rem; /* Larger font size */
+    padding: 20px 40px;
+    font-size: 1.5rem;
     margin-top: 30px;
     cursor: pointer;
-    border-radius: 10px; /* Slightly larger border radius */
+    border-radius: 10px;
     transition: background 0.3s;
   }
   
@@ -44,12 +44,12 @@
   
   input[type="text"] {
     padding: 20px;
-    width: 85%;       /* Increase width */
-    max-width: 600px; /* Larger max-width */
+    width: 85%;
+    max-width: 600px;
     margin-top: 20px;
-    font-size: 1.5rem; /* Increase font size */
+    font-size: 1.5rem;
     border: 2px solid #003366;
-    border-radius: 8px; /* Slightly larger border radius */
+    border-radius: 8px;
     color: #003366;
   }
   
@@ -58,15 +58,15 @@
     position: fixed;
     bottom: 20px;
     text-align: center;
-    font-size: 1.2rem; /* Increase footer font size */
+    font-size: 1.2rem;
   }
   
   /* Slide styling */
   .slide {
     display: none;
     text-align: center;
-    max-width: 800px; /* Increase slide container width */
-    padding: 50px;    /* Increase padding for larger feel */
+    max-width: 800px;
+    padding: 50px;
     border-radius: 15px;
     background-color: #0f4c81; /* Cobalt Blue */
   }
@@ -75,11 +75,48 @@
     display: block;
   }
   
-/* Header image styling */
-.slide img {
-    width: 500px;       /* Double the image width */
+  /* Header image styling */
+  .slide img {
+    width: 500px;
     height: auto;
-    margin-bottom: 20px; /* Slight margin below */
-    border-radius: 8px;  /* Slightly rounded corners */
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+    }
+  
+    input[type="text"] {
+      padding: 15px;
+      font-size: 1.2rem;
+    }
+  
+    .slide {
+      max-width: 90%; /* Responsive container width */
+      padding: 20px;
+    }
+  
+    /* Resize image for mobile */
+    .slide img {
+      width: 100%; /* Full width on mobile */
+      max-width: 300px; /* Restrict maximum width */
+      margin-bottom: 15px;
+    }
+  
+    #footer {
+      font-size: 1rem;
+    }
   }
   
